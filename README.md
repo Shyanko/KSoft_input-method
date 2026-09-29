@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/5c09df13-9cc0-458e-b969-1d323ec42edc
 # Ksipl
 
 C++17 / Qt 桌面文本编辑器，提供基于 `dicts/` 的内置中文拼音输入，以及 Qwen next-token 智能补全。按照 `agent.md` 实现；
