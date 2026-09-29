@@ -14,5 +14,5 @@
 
 ## 关于补全列表
 
-- 使用服务器端部署的 Qwen 3.5 0.8b base 模型，POST http://125.220.157.15:1237/v1/next-token，格式为 {"prefill":"The capital of France is","k":5}，返回值为 {@{token_id=25701; token= Paris; logprob=-1.7674602270126343; probability=0.17076614577660948},...} 的形式
+- 使用服务器端部署的 Qwen 3.5 0.8b base 模型，POST http://125.220.157.15:1237/v1/next-token ，格式为 {"prefill":"The capital of France is","k":5}，返回值为 {@{token_id=25701; token= Paris; logprob=-1.7674602270126343; probability=0.17076614577660948},...} 的形式
 - 在编辑器界面提供配置补全表大小 k 的功能，支持1-7。通过搜索找到2个token内可能性最大的 k 个路径（比如输出A之后输出B的概率是 0.9*0.8，则补全 AB 的概率视为0.72），从上到下列出可能性最大的 k 个，然后按 tab 补全第一个，ctrl+number 补全第 number 个
