@@ -53,7 +53,7 @@ ctest --test-dir build --output-on-failure
 
 ## 词库
 
-读取 Rime YAML 的头部及 `...` 后的制表符数据，不需要额外 YAML 库。按 `8105`、`41448`、`base`、`ext`、`others`、`tencent` 的顺序加载，也支持目录内其他 `*.dict.yaml` 文件。相同拼音和词条优先保留先出现的记录。
+读取 YAML 的头部及 `...` 后的制表符数据，也支持目录内其他 `*.dict.yaml` 文件。相同拼音和词条优先保留先出现的记录。当前至少适配 Rime dictionary （ https://github.com/iDvel/rime-ice ）
 
 - 支持连续全拼和带 `'` 的拼音，`ü` 对应 `v`，如 `nihao`、`ni'hao`、`lv`。
 - 候选优先精确匹配，再按词频排序；支持前缀候选，最多返回 70 项，每页 7 项。
